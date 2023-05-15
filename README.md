@@ -1,2 +1,2 @@
 # snad
-Elemental interactions via cellular automota
+Elemental interactions via cellular automota.
