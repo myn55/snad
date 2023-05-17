@@ -4,7 +4,6 @@ from pyglet.graphics.shader import Shader, ShaderProgram
 from pyglet.gl import *
 from colorama import Fore, Style
 
-import src.elements as elements
 from src.utils.shaders import ShaderContainer
 
 # Binary button codes
@@ -59,7 +58,7 @@ ui_group = pyglet.graphics.Group(6)
 
 # the main shader program has an orthogonal projection matrix of 0 by default,
 # so manually setting the matrix is required in order for the shader to render.
-projection_matrix = pyglet.math.Mat4.orthogonal_projection(0, WINDOW_WIDTH, 0, WINDOW_HEIGHT, -255, 255)
+projection_matrix = pyglet.math.Mat4.orthogonal_projection(0, WINDOW_WIDTH, 0, WINDOW_HEIGHT, 0, 1)
 main_shader_container.shaderProgram.uniforms['projection'].set(projection_matrix)
 
 # test triangle

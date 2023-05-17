@@ -3,6 +3,7 @@ from enum import Enum
 
 class ElementType(Enum):
     EMPTY = np.uint8(0)
+    SAND = np.uint8(1)
 
 # an element consists of 4 8-bit unsigned integers to save on memory
 ELEMENT_TEMPLATE = np.array([
