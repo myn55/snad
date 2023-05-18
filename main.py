@@ -6,4 +6,4 @@ colorama.init()
 if __name__ == "__main__":
     window = game.GameWindow()
     print(Back.GREEN + Fore.WHITE + "Snad has begun!" + Style.RESET_ALL)
-    pyglet.app.run()
+    pyglet.app.run(1/120)
